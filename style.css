@@ -51,10 +51,10 @@ h1,h2,h3{
     left: 0;
 }
 .tm-14{
-    transform: translateY(25px);
+    transform: translateY(30px);
 }
 .tm-18{
-    transform: translateY(30px)
+    transform: translateY(38px)
 }
 .btns:hover{
     background: none;
