@@ -51,15 +51,18 @@ h1,h2,h3{
     left: 0;
 }
 .tm-14{
-    transform: translateY(16px);
+    transform: translateY(25px);
 }
 .tm-18{
-    transform: translateY(22px)
+    transform: translateY(30px)
 }
 .btns:hover{
     background: none;
     border:1px solid;
     color:hsl(231, 69%, 60%);
+}
+.mnx{
+    max-width: 500px;
 }
 @media (max-width:700px){
     .blue, .left{
