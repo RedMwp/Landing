@@ -1,6 +1,7 @@
 *{
     text-decoration: none;
     list-style: none;
+    color:hsl(229, 31%, 21%);
 }
 h1,h2,h3{
     color: hsl(229, 31%, 21%);
@@ -8,10 +9,17 @@ h1,h2,h3{
 
 .cta-btn{
     background: hsl(0, 94%, 66%);
-    padding: .3em 1.1em;
+    padding: .5em 1.8em;
     border-radius: 6px;
     color: #fff;
     font-weight: 600;
+    border:none;
+    
+}
+.cta-btn:hover{
+    background: none;
+    color: hsl(0, 94%, 66%);
+    border:1px solid;
 }
 .blue{
     height: 180px;
@@ -39,16 +47,19 @@ h1,h2,h3{
 }
 .tab-container{
     width: 100%;
-    display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    overflow-x: auto;
-    min-height: 300px;
+    
+    min-height: 400px;
+    overflow: hidden;
 }
 .noshrink{
     flex-shrink: 0;
     position: absolute;
     left: 0;
+    top:-60%;
+    opacity: 0;
+    transition: .4s ease-in-out;
 }
 .tm-14{
     transform: translateY(30px);
@@ -64,9 +75,20 @@ h1,h2,h3{
 .mnx{
     max-width: 500px;
 }
+.btn-blue{
+    color: white;
+}
+.btn:hover{
+    border:1px solid;
+    color:hsl(231, 69%, 60%);
+    background: none;
+}
 @media (max-width:700px){
     .blue, .left{
         right:0;
         width: 50%;
+    }
+    .tab-container{
+        min-height: 500px;
     }
 }
